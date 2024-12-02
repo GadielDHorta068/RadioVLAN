@@ -1,0 +1,40 @@
+### Obtener todas las radios
+GET http://localhost:3001/radios
+
+
+### Agregar una nueva radio
+POST http://localhost:3001/add-radio
+Content-Type: application/json
+
+{
+  "name": "Radio Mitre",
+  "stream_url": "http://live-radio01.mediahubaustralia.com/2MIT/mp3/",
+  "genre": "News",
+  "country": "Argentina"
+}
+
+### Actualizar una radio
+POST http://localhost:3001/add-radio/
+Content-Type: application/json
+
+{
+  "name": "La 100 Actualizada",
+  "stream_url": "https://la100radios.ssl.cdn.cra.com.ar/la100.mp3",
+  "genre": "Pop",
+  "country": "Argentina"
+}
+
+
+### Eliminar una radio, 1 es la ID
+DELETE http://localhost:3001/delete-radio/4
+
+### Actualizar una radio, 2 es el numero de la id a cambiar
+PUT http://localhost:3001/update-radio/5
+Content-Type: application/json
+
+{
+  "name": "La 100",
+  "stream_url": "https://la100radios.ssl.cdn.cra.com.ar/la100.mp3",
+  "genre": "Pop",
+  "country": "Argentina"
+}
