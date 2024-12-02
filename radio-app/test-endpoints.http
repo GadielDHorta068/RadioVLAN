@@ -29,12 +29,12 @@ Content-Type: application/json
 DELETE http://localhost:3001/delete-radio/4
 
 ### Actualizar una radio, 2 es el numero de la id a cambiar
-PUT http://localhost:3001/update-radio/5
+PUT http://localhost:3001/update-radio/6
 Content-Type: application/json
 
 {
-  "name": "La 100",
-  "stream_url": "https://la100radios.ssl.cdn.cra.com.ar/la100.mp3",
-  "genre": "Pop",
+  "name": "Radio Mitre",
+  "stream_url": "http://cdn.instream.audio:9288/stream",
+  "genre": "Noticias",
   "country": "Argentina"
 }
