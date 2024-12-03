@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,27 +16,33 @@
     * - Enlace a hoja de estilos externa (styles.css)
     * - Contenedor para lista dinámica de radios
     * - Carga de script principal de la aplicación (app.js)
-    *
-    * Mejoras de accesibilidad:
-    * - Lenguaje establecido en español
-    * - Metadatos de viewport para responsive design
-    * - Codificación UTF-8 para caracteres especiales
     -->
 
     <title>Radios de Argentina</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Encabezado principal que describe el contenido de la página -->
+<!-- Encabezado principal -->
 <h1>Radios de Argentina</h1>
 
-<!--
-Contenedor dinámico para la lista de radios
-Se pobla mediante JavaScript en tiempo de ejecución
--->
-<div id="radio-list"></div>
+<!-- Contenedor del reproductor -->
+<div id="player-container">
+   <!-- <img src="./resources/default-cover.png" alt="Carátula de la estación" id="station-cover"> -->
+    <img src="./resources/default-cover.png" alt="Carátula de la estación" id="station-cover">
+    <h2 id="station-title">Selecciona una estación</h2>
+    <p id="station-metadata" style="display: none;">Cargando metadatos...</p>
+    <div id="player-controls">
+        <button id="prev"><i class="fas fa-backward"></i></button>
+        <button id="play-pause"><i class="fas fa-play"></i></button>
+        <button id="next"><i class="fas fa-forward"></i></button>
+    </div>
+</div>
 
-<!-- Script principal que carga y renderiza las radios -->
-<script src="app.js"></script>
+<!-- Contenedor dinámico de emisoras -->
+<div class="radio-list" id="radio-list"></div>
+
+<script src="app.js" type="module"></script>
+
 </body>
+
 </html>

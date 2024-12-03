@@ -1,17 +1,10 @@
-export class RadioCard {
-    constructor(radio, onSelect) {
-        this.radio = radio;
-        this.onSelect = onSelect;
-    }
-
-    render() {
-        const card = document.createElement("button");
-        card.className = "radio-card";
-        card.innerHTML = `
-      <h3>${this.radio.name}</h3>
-      <p>${this.radio.genre} - ${this.radio.country}</p>
+export function createRadioCard(station, onClickHandler) {
+    const radioCard = document.createElement("div");
+    radioCard.className = "radio-card";
+    radioCard.innerHTML = `
+        <h2>${station.name}</h2>
+        <p>${station.genre}</p>
     `;
-        card.addEventListener("click", () => this.onSelect(this.radio));
-        return card;
-    }
+    radioCard.onclick = () => onClickHandler(station);
+    return radioCard;
 }
