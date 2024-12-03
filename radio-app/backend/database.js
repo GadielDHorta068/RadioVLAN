@@ -1,3 +1,7 @@
+export async function query(selectfromRadios) {
+    
+}
+
 const { Pool } = require("pg");
 require("dotenv").config();
 
