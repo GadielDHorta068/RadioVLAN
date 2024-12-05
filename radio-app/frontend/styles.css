@@ -222,10 +222,29 @@ h1:hover {
     color: #c0c0d0;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .radio-card {
         width: 150px;
         height: 150px;
     }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#station-cover.spinning {
+    animation: spin 10s linear infinite;
+    transform-origin: center;
+    transition: animation 0.5s ease;
+}
+
+#station-cover.spinning:hover {
+    animation-play-state: paused;
 }
