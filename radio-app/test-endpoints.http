@@ -7,9 +7,9 @@ POST http://localhost:3001/add-radio
 Content-Type: application/json
 
 {
-  "name": "Radio Mitre",
-  "stream_url": "http://live-radio01.mediahubaustralia.com/2MIT/mp3/",
-  "genre": "News",
+  "name": "Futurock",
+  "stream_url": "https://nowplaying.mdstrm.com/5b7dcf666253b80766f27858/576b06096457cff453000015/live/icecast.audi",
+  "genre": "Pop",
   "country": "Argentina"
 }
 
