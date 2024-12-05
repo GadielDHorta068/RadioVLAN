@@ -48,14 +48,14 @@ export class Player {
         this.stationTitleElement.textContent = station.name;
 
         // Mostrar la carátula o usar una imagen por defecto
-        document.getElementById("station-cover").src = station.cover_url || "default-cover.png";
+       // document.getElementById("station-cover").src = station.cover_url || "default-cover.png";
 
         // Configurar el stream de audio
         this.audioPlayer.src = station.stream_url;
         this.audioPlayer.play().catch((error) => console.error("Error al reproducir la estación:", error));
 
         // Intentar cargar metadatos de la transmisión
-        this.updateMetadata(station.stream_url);
+        await this.updateMetadata(station.stream_url);
 
         // Actualizar el estado del botón de reproducción
         this.updatePlayPauseButton(true);
