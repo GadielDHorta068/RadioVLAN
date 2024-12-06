@@ -7,8 +7,8 @@ POST http://localhost:3001/add-radio
 Content-Type: application/json
 
 {
-  "name": "Futurock",
-  "stream_url": "https://nowplaying.mdstrm.com/5b7dcf666253b80766f27858/576b06096457cff453000015/live/icecast.audi",
+  "name": "Radio de prueba",
+  "stream_url": "https://nowplaying.mdstrm.com/5b7dcf666253b80766f27858/576b06096457cff453000015/live/icecast.audio",
   "genre": "Pop",
   "country": "Argentina"
 }
@@ -26,7 +26,7 @@ Content-Type: application/json
 
 
 ### Eliminar una radio, 1 es la ID
-DELETE http://localhost:3001/delete-radio/4
+DELETE http://localhost:3001/delete-radio/12
 
 ### Actualizar una radio, 2 es el numero de la id a cambiar
 PUT http://localhost:3001/update-radio/6

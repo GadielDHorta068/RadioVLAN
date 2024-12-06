@@ -118,6 +118,7 @@ export class Player {
      */
     updatePlayPauseButton(isPlaying) {
         const playPauseButton = document.getElementById("play-pause");
+
         playPauseButton.innerHTML = isPlaying
             ? '<i class="fas fa-pause"></i>'
             : '<i class="fas fa-play"></i>';

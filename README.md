@@ -1,5 +1,5 @@
 
-# **RadioGaGa - Escucha Radios Online**
+# **?RadioVLAN - Escucha Radios Online**
 
 RadioGaGa es un proyecto para escuchar radios argentinas de manera online. Ofrece una interfaz moderna, liviana y adaptable, permitiendo gestionar estaciones de radio de manera sencilla.
 
@@ -36,7 +36,7 @@ radio-app/
 ### **1. Clonar el Repositorio**
 
 ```bash
-git clone <URL-del-repositorio>
+git clone https://github.com/GadielDHorta068/RadioVLAN
 cd radio-app
 ```
 
@@ -67,12 +67,15 @@ cd radio-app
    ```bash
    node app.js
    ```
+   O desde el archivo package.json presionando el boton de "iniciar"
 
    El servidor backend estará disponible en `http://localhost:3001`.
 
 ### **4. Configuración del Frontend**
 
-1. **Abrir el archivo `index.html`**: Abre `frontend/index.html` en tu navegador o usa un servidor local para servirlo. Ejemplo:
+1. **Abrir el archivo `index.html`**: 
+
+Abre `frontend/index.html` en tu navegador o usa un servidor local para servirlo. Ejemplo:
 
    ```bash
    npx serve frontend
