@@ -1,15 +1,16 @@
+![311017487_624102799316621_3299156533106124961_n](https://github.com/user-attachments/assets/8cfdf2f0-d8de-4909-a32a-a75cdefcd5d3)
 
 # **?RadioVLAN - Escucha Radios Online**
 
 RadioGaGa es un proyecto para escuchar radios argentinas de manera online. Ofrece una interfaz moderna, liviana y adaptable, permitiendo gestionar estaciones de radio de manera sencilla.
 
-## **Características del Proyecto**
+## **CaracterÃ­sticas del Proyecto**
 
-- Listado dinámico de radios disponibles.
-- Gestión de estaciones de radio (agregar, editar, eliminar).
-- Reproducción de flujos de radio en vivo.
-- Backend ligero con SQLite, configurable para más bases de datos si es necesario.
-- Frontend desarrollado en tecnologías web modernas.
+- Listado dinÃ¡mico de radios disponibles.
+- GestiÃ³n de estaciones de radio (agregar, editar, eliminar).
+- ReproducciÃ³n de flujos de radio en vivo.
+- Backend ligero con SQLite, configurable para mÃ¡s bases de datos si es necesario.
+- Frontend desarrollado en tecnologÃ­as web modernas.
 
 ---
 
@@ -18,20 +19,20 @@ RadioGaGa es un proyecto para escuchar radios argentinas de manera online. Ofrec
 ```
 radio-app/
 ??? backend/                # Backend del proyecto
-?   ??? app.js              # Código del servidor Express.js
-?   ??? database.sqlite     # Base de datos SQLite (generada automáticamente)
+?   ??? app.js              # CÃ³digo del servidor Express.js
+?   ??? database.sqlite     # Base de datos SQLite (generada automÃ¡ticamente)
 ?   ??? package.json        # Dependencias del proyecto
 ?   ??? .env                # Variables de entorno (no incluir en el repositorio)
 ??? frontend/               # Frontend del proyecto
-?   ??? index.html          # Página principal
+?   ??? index.html          # PÃ¡gina principal
 ?   ??? styles.css          # Estilos CSS
-?   ??? script.js           # Lógica del frontend
-??? README.md               # Manual y guía del proyecto
+?   ??? script.js           # LÃ³gica del frontend
+??? README.md               # Manual y guÃ­a del proyecto
 ```
 
 ---
 
-## **Configuración del Proyecto**
+## **ConfiguraciÃ³n del Proyecto**
 
 ### **1. Clonar el Repositorio**
 
@@ -40,14 +41,14 @@ git clone https://github.com/GadielDHorta068/RadioVLAN
 cd radio-app
 ```
 
-### **2. Configuración del IDE**
+### **2. ConfiguraciÃ³n del IDE**
 
-1. **Descargar WebStorm**: Para un entorno de desarrollo cómodo y potente, WebStorm es una excelente opción para trabajar con proyectos JavaScript.
+1. **Descargar WebStorm**: Para un entorno de desarrollo cÃ³modo y potente, WebStorm es una excelente opciÃ³n para trabajar con proyectos JavaScript.
     - [Descargar WebStorm](https://www.jetbrains.com/es-es/webstorm/)
 
-2. **Abrir el Proyecto en WebStorm**: Abre la carpeta del proyecto recién clonada en WebStorm para comenzar a trabajar en el proyecto. Asegúrate de abrir tanto el `frontend` como el `backend` para manejar ambas partes del proyecto.
+2. **Abrir el Proyecto en WebStorm**: Abre la carpeta del proyecto reciÃ©n clonada en WebStorm para comenzar a trabajar en el proyecto. AsegÃºrate de abrir tanto el `frontend` como el `backend` para manejar ambas partes del proyecto.
 
-### **3. Configuración del Backend (Node.js)**
+### **3. ConfiguraciÃ³n del Backend (Node.js)**
 
 1. **Instalar dependencias del backend**: Navega hasta la carpeta `backend` y ejecuta:
 
@@ -56,7 +57,7 @@ cd radio-app
    npm install
    ```
 
-2. **Configurar el archivo `.env`**: Crea un archivo `.env` dentro de la carpeta `backend` y añade las siguientes configuraciones:
+2. **Configurar el archivo `.env`**: Crea un archivo `.env` dentro de la carpeta `backend` y aÃ±ade las siguientes configuraciones:
 
    ```bash
    PORT=3001
@@ -69,9 +70,9 @@ cd radio-app
    ```
    O desde el archivo package.json presionando el boton de "iniciar"
 
-   El servidor backend estará disponible en `http://localhost:3001`.
+   El servidor backend estarÃ¡ disponible en `http://localhost:3001`.
 
-### **4. Configuración del Frontend**
+### **4. ConfiguraciÃ³n del Frontend**
 
 1. **Abrir el archivo `index.html`**: 
 
@@ -81,32 +82,32 @@ Abre `frontend/index.html` en tu navegador o usa un servidor local para servirlo
    npx serve frontend
    ```
 
-   Accede a `http://localhost:5000` para ver el frontend en acción.
+   Accede a `http://localhost:5000` para ver el frontend en acciÃ³n.
 
-2. **Conectar el frontend con el backend**: Asegúrate de que el archivo `frontend/script.js` esté correctamente apuntando a las URL del backend (`http://localhost:3001`), de modo que se pueda cargar y gestionar la lista de radios.
+2. **Conectar el frontend con el backend**: AsegÃºrate de que el archivo `frontend/script.js` estÃ© correctamente apuntando a las URL del backend (`http://localhost:3001`), de modo que se pueda cargar y gestionar la lista de radios.
 
 ---
 
-## **Gestión de Estaciones de Radio**
+## **GestiÃ³n de Estaciones de Radio**
 
-En la raíz del proyecto encontrarás un archivo llamado `test-endpoints.http`, donde podrás probar las solicitudes HTTP. Este archivo será útil para interactuar con el backend y gestionar las estaciones de radio.
+En la raÃ­z del proyecto encontrarÃ¡s un archivo llamado `test-endpoints.http`, donde podrÃ¡s probar las solicitudes HTTP. Este archivo serÃ¡ Ãºtil para interactuar con el backend y gestionar las estaciones de radio.
 
 ### **1. Endpoints del Backend**
 
-# ? Documentación de Endpoints de Radio
+# ? DocumentaciÃ³n de Endpoints de Radio
 
 ## Obtener Todas las Radios
-- **Método**: GET
+- **MÃ©todo**: GET
 - **URL**: `http://localhost:3001/radios`
-- **Descripción**: Recupera la lista completa de todas las radios almacenadas
+- **DescripciÃ³n**: Recupera la lista completa de todas las radios almacenadas
 
 ## Agregar Nueva Radio
-- **Método**: POST
+- **MÃ©todo**: POST
 - **URL**: `http://localhost:3001/add-radio`
 - **Tipo de Contenido**: `application/json`
 - **Campos Requeridos**:
     - `name`: Nombre de la radio
-    - `stream_url`: URL de transmisión
+    - `stream_url`: URL de transmisiÃ³n
 - **Ejemplo de Solicitud**:
   ```json
   {
@@ -118,7 +119,7 @@ En la raíz del proyecto encontrarás un archivo llamado `test-endpoints.http`, do
   ```
 
 ## Actualizar Radio
-- **Método**: POST
+- **MÃ©todo**: POST
 - **URL**: `http://localhost:3001/add-radio/`
 - **Tipo de Contenido**: `application/json`
 - **Ejemplo de Solicitud**:
@@ -132,13 +133,13 @@ En la raíz del proyecto encontrarás un archivo llamado `test-endpoints.http`, do
   ```
 
 ## Eliminar Radio
-- **Método**: DELETE
+- **MÃ©todo**: DELETE
 - **URL**: `http://localhost:3001/delete-radio/{id}`
 - **Ejemplo**: `http://localhost:3001/delete-radio/4`
-- **Descripción**: Elimina la radio con el ID especificado
+- **DescripciÃ³n**: Elimina la radio con el ID especificado
 
-## Actualizar Información de Radio
-- **Método**: PUT
+## Actualizar InformaciÃ³n de Radio
+- **MÃ©todo**: PUT
 - **URL**: `http://localhost:3001/update-radio/{id}`
 - **Tipo de Contenido**: `application/json`
 - **Ejemplo de Solicitud**:
@@ -152,9 +153,9 @@ En la raíz del proyecto encontrarás un archivo llamado `test-endpoints.http`, do
   ```
 ---
 
-## **Cómo Contribuir**
+## **CÃ³mo Contribuir**
 
-1. **Clonar el Proyecto**: Realiza un fork del proyecto y clónalo a tu máquina local.
+1. **Clonar el Proyecto**: Realiza un fork del proyecto y clÃ³nalo a tu mÃ¡quina local.
 
 2. **Crear una Rama Nueva**: Crea una nueva rama para tus modificaciones.
 
@@ -164,7 +165,7 @@ En la raíz del proyecto encontrarás un archivo llamado `test-endpoints.http`, do
 
 3. **Realizar Cambios y Verificar Funcionamiento**: Haz tus cambios y verifica que todo funcione correctamente.
 
-4. **Hacer Commit de los Cambios**: Asegúrate de hacer commit de tus cambios con un mensaje claro.
+4. **Hacer Commit de los Cambios**: AsegÃºrate de hacer commit de tus cambios con un mensaje claro.
 
    ```bash
    git commit -m "Agregada nueva funcionalidad"
@@ -176,13 +177,13 @@ En la raíz del proyecto encontrarás un archivo llamado `test-endpoints.http`, do
    git push origin nueva-funcionalidad
    ```
 
-6. **Crear un Pull Request**: Una vez que tus cambios estén listos, crea un Pull Request al repositorio principal para que los revisemos.
+6. **Crear un Pull Request**: Una vez que tus cambios estÃ©n listos, crea un Pull Request al repositorio principal para que los revisemos.
 
 ---
 
 ## **Notas Finales**
 
-- Este proyecto utiliza Node.js y Express.js para el backend y tecnologías web estándar para el frontend.
-- Asegúrate de seguir las instrucciones para instalar las dependencias y configurar el entorno adecuadamente.
+- Este proyecto utiliza Node.js y Express.js para el backend y tecnologÃ­as web estÃ¡ndar para el frontend.
+- AsegÃºrate de seguir las instrucciones para instalar las dependencias y configurar el entorno adecuadamente.
 - Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o contribuir con un pull request.
 
